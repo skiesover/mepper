@@ -1,0 +1,142 @@
+﻿
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+#header {
+  z-index: 2;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  background-color: #2a497a;
+}
+
+#logo>a {
+  display: inline;
+  font-family: Arial Rounded MT Bold;
+  font-weight: 9000;
+  -webkit-font-smoothing: antialiased;
+  font-size: 38px;
+  margin-left: 280px;
+  margin-top: 22px;
+  color: #abbcd6;
+  position: absolute;
+  transition: .15s;
+  text-decoration: none;
+}
+
+#logo>a:not(.is-active):hover { color: white; }
+
+#map {
+  display: inline;
+  position: absolute;
+  top: 50px;
+  left: 27%;
+}
+
+#info-box-title {
+  height: 70px;
+  width: 160px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(240,240,240, 0.98);
+  border: 1px solid rgb(244, 244, 244);
+  border-radius: 0px;
+  padding: 15px;
+
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  font-size: 16px;
+}
+
+#info-box-details {
+  display: block;
+  position: absolute;
+  z-index: 1;
+
+  color: rgb(69, 78, 94);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.nav {
+  margin-top: 39px;
+  margin-left: 480px;
+}
+
+.nav-item {
+  color: #f2f7ff;
+  padding: 20px;
+  text-decoration: none;
+  transition: .3s;
+  z-index: 1;
+  font-family: Arial Rounded MT Bold;
+  font-weight: 300;
+  font-size: 15px;
+  
+  
+  &:before {
+    content: "";
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: .3s;
+  }
+}
+
+/* .nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+} */
+
+.nav-item:hover { color: #e8a87c; }
+
+#breadcrumb {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  font-size: 16px;
+  margin-left: 55px;
+  margin-top: 25px;
+  color: #e8a87c;
+}
+
+#map-title {
+  font-family: Arial Rounded MT Bold;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 30px;
+  margin-left: 55px;
+  margin-top: 25px;
+  color: black;
+}
+
+#map-description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 55px;
+  margin-top: 17px;
+  color: #333436;
+  width: 250px;
+
+}
+
+#footer {
+  margin-top: 250px;
+  height: 300px;
+  overflow: hidden;
+  background-color: #2a497a;
+}
+
+
+
