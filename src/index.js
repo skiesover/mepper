@@ -14,8 +14,7 @@ mapDescription.innerHTML = constants.MAP_DESCRIPTION;
 for (var i = 0; i < regions.length; i++) {
 	regions[i].mouseover(
 		function (e) {
-			this.node.setAttribute('stroke-width', 3);
-			this.node.setAttribute('stroke-opacity', 1);
+			this.node.setAttribute(constants.ATTR_STR_WIDTH, 3);
 
 			infoBoxTitle.style.display = 'block';
 			infoBoxTitle.innerHTML = this.data('id').toLowerCase();// + "</br>" + "</br>" + this.data('text');
@@ -27,8 +26,7 @@ for (var i = 0; i < regions.length; i++) {
 	regions[i].mouseout(
 		function (e) {
 
-			this.node.setAttribute('stroke-width', constants.STROKE_WIDTH_0_3);
-			this.node.setAttribute('stroke-opacity', constants.STROKE_OPAC_1);
+			this.node.setAttribute(constants.ATTR_STR_WIDTH, constants.STROKE_WIDTH_0_3);
 
 			infoBoxTitle.style.display = 'none';
 			infoBoxDetails.style.display = 'none';

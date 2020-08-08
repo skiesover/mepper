@@ -7,6 +7,11 @@ export const STROKE_WIDTH_0_3 = 0.3;
 export const STROKE_OPAC_1 = 1;
 export const FILL_OPAC_1 = 1;
 
+// attributes
+export const ATTR_STR_WIDTH = 'stroke-width';
+export const ATTR_STR_OPAC = 'stroke-opacity';
+export const ATTR_FILL_OPAC = 'fill-opacity';
+
 // other
 export const HEADER = 'Population by Province';
 export const CANADA = 'Canada';
