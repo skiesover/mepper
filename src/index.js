@@ -14,11 +14,8 @@ mapDescription.innerHTML = constants.MAP_DESCRIPTION;
 for (var i = 0; i < regions.length; i++) {
 	regions[i].mouseover(
 		function (e) {
-
-			//this.node.style.opacity = 0.5;
-			this.node.setAttribute('stroke-width', 4);
-			this.node.setAttribute('stroke', "black");
-			this.node.setAttribute('fill', constants.HOVER_COLOR);
+			this.node.setAttribute('stroke-width', 3);
+			this.node.setAttribute('stroke-opacity', 1);
 
 			infoBoxTitle.style.display = 'block';
 			infoBoxTitle.innerHTML = this.data('id').toLowerCase();// + "</br>" + "</br>" + this.data('text');
@@ -26,13 +23,12 @@ for (var i = 0; i < regions.length; i++) {
 			infoBoxDetails.style.display = 'block';
 			infoBoxDetails.innerHTML = this.data('text') + " mln";
 		});
-
+		
 	regions[i].mouseout(
 		function (e) {
-			this.node.setAttribute('stroke-width', constants.STROKE_WIDTH_1);
-			this.node.setAttribute('fill', constants.DFLT_COLOR);
-			this.node.setAttribute('stroke-opacity', constants.STROKE_OPAC_0);
-			this.node.setAttribute('stroke', "white");
+
+			this.node.setAttribute('stroke-width', constants.STROKE_WIDTH_0_3);
+			this.node.setAttribute('stroke-opacity', constants.STROKE_OPAC_1);
 
 			infoBoxTitle.style.display = 'none';
 			infoBoxDetails.style.display = 'none';

@@ -1,10 +1,10 @@
 // colors
-export const DFLT_COLOR = '#659dbd' //'#8295b8';
+export const DFLT_COLOR = '#97c3db'//'#659dbd' //'#8295b8';
 export const HOVER_COLOR = '#e8a87c' //"#d3d8e0"; // #d94848
 
 // styles
-export const STROKE_WIDTH_1 = 1;
-export const STROKE_OPAC_0 = 0;
+export const STROKE_WIDTH_0_3 = 0.3;
+export const STROKE_OPAC_1 = 1;
 export const FILL_OPAC_1 = 1;
 
 // other
