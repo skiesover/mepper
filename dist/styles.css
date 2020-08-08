@@ -6,9 +6,11 @@ body {
 #header {
   z-index: 2;
   position: relative;
-  height: 100px;
+  height: 55px;
   overflow: hidden;
-  background-color: #2a497a;
+  background-color: rgb(245, 247, 248) #2a497a;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 3px 7px -3px rgba(0, 0, 0, 0.15);
 }
 
 #logo>a {
@@ -16,22 +18,22 @@ body {
   font-family: Arial Rounded MT Bold;
   font-weight: 9000;
   -webkit-font-smoothing: antialiased;
-  font-size: 38px;
+  font-size: 28px;
   margin-left: 280px;
-  margin-top: 22px;
-  color: #abbcd6;
+  margin-top: 8px;
+  color: #2257a5;
   position: absolute;
   transition: .15s;
   text-decoration: none;
 }
 
-#logo>a:not(.is-active):hover { color: white; }
+#logo>a:not(.is-active):hover { color: #8097b9; }
 
-#map {
-  display: inline;
-  position: absolute;
-  top: 50px;
-  left: 27%;
+#map { 
+  margin-top: -5%;
+  margin-left: 20%;
+  max-height: 100%;
+  width: auto;
 }
 
 #info-box-title {
@@ -65,19 +67,19 @@ body {
 }
 
 .nav {
-  margin-top: 39px;
-  margin-left: 480px;
+  margin-top: 19px;
+  margin-left: 500px;
 }
 
 .nav-item {
-  color: #f2f7ff;
-  padding: 20px;
+  color: black;
+  padding: 10px;
   text-decoration: none;
   transition: .3s;
   z-index: 1;
-  font-family: Arial Rounded MT Bold;
-  font-weight: 300;
-  font-size: 15px;
+  font-family: 'Verdana';
+  font-weight: 200;
+  font-size: 13px;
   
   
   &:before {
@@ -98,24 +100,27 @@ body {
   bottom: 0;
 } */
 
-.nav-item:hover { color: #e8a87c; }
+.nav-item:hover { 
+  color: #babdd4;
+  font-weight: 500; 
+}
 
 #breadcrumb {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 1;
-  font-size: 16px;
-  margin-left: 55px;
-  margin-top: 25px;
+  font-size: 15px;
+  margin-left: 170px;
+  margin-top: 20px;
   color: #e8a87c;
 }
 
 #map-title {
-  font-family: Arial Rounded MT Bold;
-  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   line-height: 1;
-  font-size: 30px;
-  margin-left: 55px;
+  font-size: 28px;
+  margin-left: 170px;
   margin-top: 25px;
   color: black;
 }
@@ -124,16 +129,15 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 15px;
-  margin-left: 55px;
+  margin-left: 170px;
+  margin-right: 170px;
   margin-top: 17px;
   color: #333436;
-  width: 250px;
-
 }
 
 #footer {
-  margin-top: 250px;
-  height: 300px;
+  margin-top: 1000px;
+  height: 100px;
   overflow: hidden;
   background-color: #2a497a;
 }

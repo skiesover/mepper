@@ -4,9 +4,8 @@ import { CANADA, DFLT_COLOR, FILL_OPAC_1, STROKE_WIDTH_1, STROKE_OPAC_0 } from "
 import { textNB, textAB, textBC, textMB, textNL, textNS, textNU, textNWT, textON, textPEI, textQC, textSK, textYK } from "./map-values";
 
 export function getRegions() {
-    const rsr = Raphael('map', 750, 650);
-
-    // regions paths
+    const rsr = Raphael('map', 1100, 1100);
+    
     const NewBrunswick = rsr.path(PATH_NB).attr({ id: 'NewBrunswick', class: 'NB', parent: CANADA, fill: DFLT_COLOR, 'fill-opacity': FILL_OPAC_1, 'stroke-width': STROKE_WIDTH_1, 'stroke-opacity': STROKE_OPAC_0 }).data('id', 'New Brunswick').data('text', textNB);
     const PrinceEdwardIsland = rsr.path(PATH_PEI).attr({ id: 'PrinceEdwardIsland', class: 'PEI', parent: CANADA, fill: DFLT_COLOR, 'fill-opacity': FILL_OPAC_1, 'stroke-width': STROKE_WIDTH_1, 'stroke-opacity': STROKE_OPAC_0 }).data('id', 'Prince Edward Island').data('text', textPEI);
     const Ontario = rsr.path(PATH_ON).attr({ id: 'Ontario', class: 'ONT', parent: CANADA, fill: DFLT_COLOR, 'fill-opacity': FILL_OPAC_1, 'stroke-width': STROKE_WIDTH_1, 'stroke-opacity': STROKE_OPAC_0 }).data('id', 'Ontario').data('text', textON);

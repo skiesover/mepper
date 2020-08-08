@@ -9,7 +9,7 @@ var mapDescription = document.getElementById('map-description');
 const regions = getRegions();
 
 mapTitle.innerHTML = constants.HEADER;
-mapDescription.innerHTML = constants.RANDOM_TEXT;
+mapDescription.innerHTML = constants.MAP_DESCRIPTION;
 
 for (var i = 0; i < regions.length; i++) {
 	regions[i].mouseover(
@@ -31,7 +31,7 @@ for (var i = 0; i < regions.length; i++) {
 		function (e) {
 			this.node.setAttribute('stroke-width', constants.STROKE_WIDTH_1);
 			this.node.setAttribute('fill', constants.DFLT_COLOR);
-			this.node.setAttribute('stroke-opacity', 0);
+			this.node.setAttribute('stroke-opacity', constants.STROKE_OPAC_0);
 			this.node.setAttribute('stroke', "white");
 
 			infoBoxTitle.style.display = 'none';
@@ -41,8 +41,8 @@ for (var i = 0; i < regions.length; i++) {
 }
 
 $(document).mousemove(function (e) {
-	$('#info-box-title').css('top', e.pageY - $('#info-box-title').height() - 80);
+	$('#info-box-title').css('top', e.pageY - $('#info-box-title').height() - 65);
 	$('#info-box-title').css('left', e.pageX - ($('#info-box-title').width()) / 2);
-	$('#info-box-details').css('top', e.pageY - $('#info-box-title').height() - 50); // -30
+	$('#info-box-details').css('top', e.pageY - $('#info-box-title').height() - 30); // -30
 	$('#info-box-details').css('left', e.pageX - ($('#info-box-title').width()) / 2); // 2
 }).mouseover();

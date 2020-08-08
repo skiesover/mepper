@@ -8,8 +8,8 @@ export const STROKE_OPAC_0 = 0;
 export const FILL_OPAC_1 = 1;
 
 // other
-export const HEADER = 'Population';
+export const HEADER = 'Population by Province';
 export const CANADA = 'Canada';
-export const RANDOM_TEXT = "This map shows population by province." + "</br>" + "Author: Ildar Lutfullin." + "</br>" + "</br>" +
-    "Husbands ask repeated resolved but laughter debating. She end cordial visitor noisier fat subject general picture. Or if offering confined entrance no. Nay rapturous him see something residence. Highly talked do so vulgar. Her use behaved spirits and natural attempt say feeling. Exquisite mr incommode immediate he something ourselves it of. Law conduct yet chiefly beloved examine village proceed.";
+export const MAP_DESCRIPTION = "Author: Ildar Lutfullin." + "</br>" + "</br>" +
+    "This map shows population by Canadian Provinces. Her use behaved spirits and natural attempt say feeling. Exquisite mr incommode immediate he something ourselves it of. Law conduct yet chiefly beloved examine village proceed.";
 
