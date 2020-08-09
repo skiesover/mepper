@@ -1,0 +1,58 @@
+{
+    "maps": {
+        "population_canada": {
+            "title": "Population By Province",
+            "description": "Author: <i>skiesover</i></br></br>This map shows population by Canadian Provinces. Her use behaved spirits and natural attempt say feeling. Exquisite mr incommode immediate he something ourselves it of. Law conduct yet chiefly beloved examine village proceed.",
+            "postfix": "mln",
+            "NB": 0.78,
+            "PEI": 0.16,
+            "ON": 14.74,
+            "MB": 1.38,
+            "SK": 1.18,
+            "AB": 4.42,
+            "YK": 0.04,
+            "NL": 0.52,
+            "NS": 0.98,
+            "QC": 8.55,
+            "BC": 5.12,
+            "NU": 0.04,
+            "NWT": 0.04
+        },
+        "deaths": {
+            "title": "Number of Deaths",
+            "description": "Author: <i>skiesover</i></br></br>This map shows number of deaths in 2019.",
+            "postfix": "",
+            "NB": 5,
+            "PEI": 7,
+            "ON": 0,
+            "MB": 10,
+            "SK": 100,
+            "AB": 4,
+            "YK": 1,
+            "NL": 101,
+            "NS": 23,
+            "QC": 8,
+            "BC": 7,
+            "NU": 32,
+            "NWT": 5
+        },
+        "abortions": {
+            "title": "Number of Abortions",
+            "description": "Author: <i>Maria Andreeva</i></br></br>This map shows number of abortions in 2019.",
+            "postfix": "",
+            "NB": 5,
+            "PEI": 7,
+            "ON": 8,
+            "MB": 10,
+            "SK": 100,
+            "AB": 4,
+            "YK": 0,
+            "NL": 100,
+            "NS": 300,
+            "QC": 8,
+            "BC": 1000,
+            "NU": 32,
+            "NWT": 1230
+        }
+    }
+}

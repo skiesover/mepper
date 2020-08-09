@@ -13,8 +13,6 @@ export const ATTR_STR_WIDTH = 'stroke-width';
 export const ATTR_STR_OPAC = 'stroke-opacity';
 export const ATTR_FILL_OPAC = 'fill-opacity';
 
-// other
-export const HEADER = 'Population by Province';
-export const MAP_DESCRIPTION = "Author: <i>skiesover</i>" + "</br>" + "</br>" +
-    "This map shows population by Canadian Provinces. Her use behaved spirits and natural attempt say feeling. Exquisite mr incommode immediate he something ourselves it of. Law conduct yet chiefly beloved examine village proceed.";
-
+// data
+export const ID = 'id';
+export const VALUE = 'value';

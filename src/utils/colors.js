@@ -1,9 +1,27 @@
+import { VALUE } from './const';
+
 var Rainbow = require('rainbowvis.js');
-const { getValues } = require("../maps/map-values");
 
-export function getColor(region) {
+export function getColor(map, region) {
 
-    var values = getValues();
+map.valueQC;
+
+    var values = [
+        map.valueAB,
+        map.valueBC,
+        map.valueMB,
+        map.valueNB,
+        map.valueNL,
+        map.valueNS,
+        map.valueNU,
+        map.valueNWT,
+        map.valueON,
+        map.valuePEI,
+        map.valueQC,
+        map.valueSK,
+        map.valueYK
+    ];
+
     var max = Math.max(...values);
     var low = Math.min(...values);
 
@@ -13,7 +31,7 @@ export function getColor(region) {
     var forth = (max + low) * 4 / 6;
     var fifth = (max + low) * 5 / 6;
 
-    var regionValue = region.data('text');
+    var regionValue = region.data(VALUE);
     var gradient = getColorGradient('#def2fc', '#005bb5');
 
     var color;
