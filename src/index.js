@@ -12,9 +12,12 @@ mapTitle.innerHTML = constants.HEADER;
 mapDescription.innerHTML = constants.MAP_DESCRIPTION;
 
 for (var i = 0; i < regions.length; i++) {
-	regions[i].mouseover(
+	var region = regions[i];
+
+	region.mouseover(
 		function (e) {
-			this.node.setAttribute(constants.ATTR_STR_WIDTH, 3);
+
+			this.node.setAttribute(constants.ATTR_STR_WIDTH, 2);
 
 			infoBoxTitle.style.display = 'block';
 			infoBoxTitle.innerHTML = this.data('id').toLowerCase();// + "</br>" + "</br>" + this.data('text');
@@ -22,8 +25,8 @@ for (var i = 0; i < regions.length; i++) {
 			infoBoxDetails.style.display = 'block';
 			infoBoxDetails.innerHTML = this.data('text') + " mln";
 		});
-		
-	regions[i].mouseout(
+
+	region.mouseout(
 		function (e) {
 
 			this.node.setAttribute(constants.ATTR_STR_WIDTH, constants.STROKE_WIDTH_0_3);

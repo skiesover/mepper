@@ -27,7 +27,7 @@ body {
   text-decoration: none;
 }
 
-#logo>a:not(.is-active):hover { color: #8097b9; }
+#logo>a:not(.is-active):hover { color: #6081b3; }
 
 #map { 
   margin-top: -5%;
@@ -72,14 +72,14 @@ body {
 }
 
 .nav-item {
-  color: black;
+  color: #333436;
   padding: 10px;
   text-decoration: none;
   transition: .3s;
   z-index: 1;
   font-family: 'Verdana';
-  font-weight: 200;
-  font-size: 13px;
+  font-weight: 150;
+  font-size: 14px;
   
   
   &:before {
@@ -101,7 +101,7 @@ body {
 } */
 
 .nav-item:hover { 
-  color: #babdd4;
+  color: #6081b3;
   font-weight: 500; 
 }
 
