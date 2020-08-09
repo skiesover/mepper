@@ -17,7 +17,7 @@ for (var i = 0; i < regions.length; i++) {
 	region.mouseover(
 		function (e) {
 
-			this.node.setAttribute(constants.ATTR_STR_WIDTH, 2);
+			this.node.setAttribute(constants.ATTR_STR_WIDTH, 1.5);
 
 			infoBoxTitle.style.display = 'block';
 			infoBoxTitle.innerHTML = this.data('id').toLowerCase();// + "</br>" + "</br>" + this.data('text');
@@ -38,7 +38,7 @@ for (var i = 0; i < regions.length; i++) {
 }
 
 $(document).mousemove(function (e) {
-	$('#info-box-title').css('top', e.pageY - $('#info-box-title').height() - 65);
+	$('#info-box-title').css('top', e.pageY - $('#info-box-title').height() - 60);
 	$('#info-box-title').css('left', e.pageX - ($('#info-box-title').width()) / 2);
 	$('#info-box-details').css('top', e.pageY - $('#info-box-title').height() - 30); // -30
 	$('#info-box-details').css('left', e.pageX - ($('#info-box-title').width()) / 2); // 2
